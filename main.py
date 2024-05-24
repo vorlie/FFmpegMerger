@@ -1,7 +1,7 @@
 import os, json, tkinter as tk, ctypes, threading
 from tkinter import filedialog, ttk
 
-class MyApp(tk.Tk):
+class FFmpegMerger(tk.Tk):
     def __init__(self):
         super().__init__()
         self.ffmpeg_path = tk.StringVar()
@@ -172,7 +172,7 @@ class MyApp(tk.Tk):
         threading.Thread(target=self.run_ffmpeg).start()
 
 if __name__ == "__main__":
-    app = MyApp()
+    app = FFmpegMerger()
     app.title("FFmpeg Audio and Video Merger")
     app.minsize(400, 400)
     app.resizable(False, False)
