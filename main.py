@@ -68,7 +68,7 @@ class MyApp(tk.Tk):
         tk.Label(output_file_frame, text="Output File Name").pack(anchor="w")
         self.output_file_name_entry = tk.Entry(output_file_frame, textvariable=self.file_name, width=50)
         self.output_file_name_entry.pack(side=tk.LEFT)
-        self.output_browse_button = tk.Button(output_file_frame, text="Browse", command=self.browse_output_file)
+        self.output_browse_button = tk.Button(output_file_frame, text="Browse", command=self.browse_output_file, borderwidth=0, highlightthickness=0, background="#3C3C3C", cursor="hand2")
         self.output_browse_button.pack(side=tk.LEFT, padx=10)
 
         # Buttons
